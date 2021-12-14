@@ -80,7 +80,7 @@
               <OutArgument x:TypeArguments="x:String">[extractedData.Columns(0).ColumnName]</OutArgument>
             </ui:AssignOperation.To>
             <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">Titlu Job</InArgument>
+              <InArgument x:TypeArguments="x:String">Job Title</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
@@ -88,7 +88,7 @@
               <OutArgument x:TypeArguments="x:String">[extractedData.Columns(1).ColumnName]</OutArgument>
             </ui:AssignOperation.To>
             <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">Companie</InArgument>
+              <InArgument x:TypeArguments="x:String">Job Link</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
@@ -96,7 +96,7 @@
               <OutArgument x:TypeArguments="x:String">[extractedData.Columns(2).ColumnName]</OutArgument>
             </ui:AssignOperation.To>
             <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">Oras(e)</InArgument>
+              <InArgument x:TypeArguments="x:String">Company</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
@@ -104,7 +104,7 @@
               <OutArgument x:TypeArguments="x:String">[extractedData.Columns(3).ColumnName]</OutArgument>
             </ui:AssignOperation.To>
             <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">Data</InArgument>
+              <InArgument x:TypeArguments="x:String">City/Cities</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
@@ -112,7 +112,7 @@
               <OutArgument x:TypeArguments="x:String">[extractedData.Columns(4).ColumnName]</OutArgument>
             </ui:AssignOperation.To>
             <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">Aplicat</InArgument>
+              <InArgument x:TypeArguments="x:String">Date Published</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
         </scg:List>
