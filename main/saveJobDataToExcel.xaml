@@ -2,7 +2,7 @@
   <x:Members>
     <x:Property Name="extractedData" Type="InArgument(sd:DataTable)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>466,440</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>735,480</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -62,7 +62,7 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="476,415" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="C:\Users\adriancondrea\Desktop\RPA\Hipo-UI-Path\extractedJobData.xlsx">
+  <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="434,415" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="C:\Users\adriancondrea\Desktop\RPA\Hipo-UI-Path\extractedJobData.xlsx">
     <ui:ExcelApplicationScope.Body>
       <ActivityAction x:TypeArguments="ui:WorkbookApplication">
         <ActivityAction.Argument>
@@ -74,7 +74,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:InvokeVBA OutputValue="{x:Null}" CodeFilePath="C:\Users\adriancondrea\Desktop\RPA\Hipo-UI-Path\clearSheet.txt" DisplayName="Invoke VBA" EntryMethodName="ClearSheet" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeVBA_1" />
+          <ui:InvokeVBA OutputValue="{x:Null}" CodeFilePath="C:\Users\adriancondrea\Desktop\RPA\Hipo-UI-Path\clearSheet.txt" DisplayName="Invoke VBA - for clearing sheet" EntryMethodName="ClearSheet" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeVBA_1" />
           <ui:ExcelWriteRange AddHeaders="True" DataTable="[extractedData]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Sheet1" StartingCell="A1" />
         </Sequence>
       </ActivityAction>

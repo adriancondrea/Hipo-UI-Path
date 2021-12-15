@@ -89,7 +89,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DeselectAfter="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="434,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[searchRow(&quot;Cuvinte cheie&quot;).ToString]">
+    <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" ContinueOnError="True" DeselectAfter="True" DisplayName="Type Into 'Cuvinte cheie'" EmptyField="True" sap:VirtualizedContainerService.HintSize="434,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[searchRow(&quot;Cuvinte cheie&quot;).ToString]">
       <ui:TypeInto.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5d9bb5eb-a3b7-4e92-b96d-35532b51b87a" InformativeScreenshot="83eb404aaea062ade3dcae9cb1c30277" Selector="&lt;html app='msedge.exe' title='Cauta loc de munca.' /&gt;&lt;webctrl tag='INPUT' type='text' /&gt;">
           <ui:Target.TimeoutMS>
@@ -101,14 +101,14 @@
         </ui:Target>
       </ui:TypeInto.Target>
     </ui:TypeInto>
-    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" Server="{x:Null}" ApiKey="clgOSthD9BzqLEmg4L1CehvvTNw9MvdEYGTdBt7VdwMRNiXhQqSuNUMFoJDYCK6pA0QavqhXS1L5lIg/A2nSOg==" DesignTimeCacheId="bc17e958-7b54-4ff1-9872-89098d266baf" DisplayName="CV Screen Scope 'SELECT  controls[select...'" sap:VirtualizedContainerService.HintSize="434,476" sap2010:WorkflowViewState.IdRef="CVScope_1" Version="V2">
+    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" Server="{x:Null}" ApiKey="clgOSthD9BzqLEmg4L1CehvvTNw9MvdEYGTdBt7VdwMRNiXhQqSuNUMFoJDYCK6pA0QavqhXS1L5lIg/A2nSOg==" DesignTimeCacheId="bc17e958-7b54-4ff1-9872-89098d266baf" DisplayName="Computer Vision  Screen Scope select 'Domeniu'" sap:VirtualizedContainerService.HintSize="434,476" sap2010:WorkflowViewState.IdRef="CVScope_1" Version="V2">
       <p:CVScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
           </ActivityAction.Argument>
           <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_2">
-            <p:CvSelectItemWithDescriptor DeselectAfter="{x:Null}" InRegion="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" Descriptor="[&quot;Target: InputBox (3,0,213,18)&quot;]" DesignTimeCacheId="bc17e958-7b54-4ff1-9872-89098d266baf" DesignTimeScaleFactor="2" DisplayName="CV Dropdown Select - InputBox" EmptyField="False" sap:VirtualizedContainerService.HintSize="400,165" sap2010:WorkflowViewState.IdRef="CvSelectItemWithDescriptor_1" InformativeScreenshot="d120be54ca64c42e43ab142bf7863760" Text="[searchRow(&quot;Domeniu&quot;).ToString]" Version="V2">
+            <p:CvSelectItemWithDescriptor DeselectAfter="{x:Null}" InRegion="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" Descriptor="[&quot;Target: InputBox (3,0,213,18)&quot;]" DesignTimeCacheId="bc17e958-7b54-4ff1-9872-89098d266baf" DesignTimeScaleFactor="2" DisplayName="CV Dropdown Select - 'Domeniu'" EmptyField="False" sap:VirtualizedContainerService.HintSize="400,165" sap2010:WorkflowViewState.IdRef="CvSelectItemWithDescriptor_1" InformativeScreenshot="d120be54ca64c42e43ab142bf7863760" Text="[searchRow(&quot;Domeniu&quot;).ToString]" Version="V2">
               <p:CvSelectItemWithDescriptor.DesignTimeDescriptor>
                 <uc:CvDescriptor>
                   <uc:CvDescriptor.Target>
@@ -130,6 +130,9 @@
           </Sequence>
         </ActivityAction>
       </p:CVScope.Body>
+      <p:CVScope.DesignTimeCache>
+        <uc:CVCache CvUiElements="{x:Null}" OcrTexts="{x:Null}" />
+      </p:CVScope.DesignTimeCache>
       <p:CVScope.DesignTimeCacheContainer>
         <uc:CvCacheContainer>
           <uc:CvCacheContainer.Caches>
@@ -173,14 +176,14 @@
         <InArgument x:TypeArguments="x:Boolean" />
       </p:CVScope.UseLocalServer>
     </p:CVScope>
-    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" Server="{x:Null}" ApiKey="clgOSthD9BzqLEmg4L1CehvvTNw9MvdEYGTdBt7VdwMRNiXhQqSuNUMFoJDYCK6pA0QavqhXS1L5lIg/A2nSOg==" DesignTimeCacheId="bc17e958-7b54-4ff1-9872-89098d266baf" DisplayName="CV Screen Scope 'SELECT  controls[select...'" sap:VirtualizedContainerService.HintSize="434,476" sap2010:WorkflowViewState.IdRef="CVScope_4" Version="V2">
+    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" Server="{x:Null}" ApiKey="clgOSthD9BzqLEmg4L1CehvvTNw9MvdEYGTdBt7VdwMRNiXhQqSuNUMFoJDYCK6pA0QavqhXS1L5lIg/A2nSOg==" DesignTimeCacheId="bc17e958-7b54-4ff1-9872-89098d266baf" DisplayName="Computer Vision  Screen Scope select 'Tip Job'" sap:VirtualizedContainerService.HintSize="434,476" sap2010:WorkflowViewState.IdRef="CVScope_4" Version="V2">
       <p:CVScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
           </ActivityAction.Argument>
           <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_7">
-            <p:CvSelectItemWithDescriptor DeselectAfter="{x:Null}" InRegion="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" Descriptor="[&quot;Target: InputBox (1,0,215,19)&quot;]" DesignTimeCacheId="bc17e958-7b54-4ff1-9872-89098d266baf" DesignTimeScaleFactor="2" DisplayName="CV Dropdown Select - InputBox" EmptyField="False" sap:VirtualizedContainerService.HintSize="400,165" sap2010:WorkflowViewState.IdRef="CvSelectItemWithDescriptor_5" InformativeScreenshot="c574f8d107b2cef7bccc3bfe6dfe97ce" Text="[searchRow(&quot;Tip job&quot;).ToString]" Version="V2">
+            <p:CvSelectItemWithDescriptor DeselectAfter="{x:Null}" InRegion="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" Descriptor="[&quot;Target: InputBox (1,0,215,19)&quot;]" DesignTimeCacheId="bc17e958-7b54-4ff1-9872-89098d266baf" DesignTimeScaleFactor="2" DisplayName="CV Dropdown Select - Tip Job" EmptyField="False" sap:VirtualizedContainerService.HintSize="400,165" sap2010:WorkflowViewState.IdRef="CvSelectItemWithDescriptor_5" InformativeScreenshot="c574f8d107b2cef7bccc3bfe6dfe97ce" Text="[searchRow(&quot;Tip job&quot;).ToString]" Version="V2">
               <p:CvSelectItemWithDescriptor.DesignTimeDescriptor>
                 <uc:CvDescriptor>
                   <uc:CvDescriptor.Target>
@@ -247,14 +250,14 @@
         <InArgument x:TypeArguments="x:Boolean" />
       </p:CVScope.UseLocalServer>
     </p:CVScope>
-    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" Server="{x:Null}" ApiKey="clgOSthD9BzqLEmg4L1CehvvTNw9MvdEYGTdBt7VdwMRNiXhQqSuNUMFoJDYCK6pA0QavqhXS1L5lIg/A2nSOg==" DesignTimeCacheId="bc17e958-7b54-4ff1-9872-89098d266baf" DisplayName="CV Screen Scope 'SELECT  controls[select...'" sap:VirtualizedContainerService.HintSize="434,476" sap2010:WorkflowViewState.IdRef="CVScope_3" Version="V2">
+    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" Server="{x:Null}" ApiKey="clgOSthD9BzqLEmg4L1CehvvTNw9MvdEYGTdBt7VdwMRNiXhQqSuNUMFoJDYCK6pA0QavqhXS1L5lIg/A2nSOg==" DesignTimeCacheId="bc17e958-7b54-4ff1-9872-89098d266baf" DisplayName="Computer Vision  Screen Scope select 'Nivel Job'" sap:VirtualizedContainerService.HintSize="434,476" sap2010:WorkflowViewState.IdRef="CVScope_3" Version="V2">
       <p:CVScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
           </ActivityAction.Argument>
           <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_4">
-            <p:CvSelectItemWithDescriptor DeselectAfter="{x:Null}" InRegion="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" Descriptor="[&quot;Target: InputBox (1,0,215,19)&quot;]" DesignTimeCacheId="bc17e958-7b54-4ff1-9872-89098d266baf" DesignTimeScaleFactor="2" DisplayName="CV Dropdown Select - InputBox" EmptyField="False" sap:VirtualizedContainerService.HintSize="400,165" sap2010:WorkflowViewState.IdRef="CvSelectItemWithDescriptor_4" InformativeScreenshot="c574f8d107b2cef7bccc3bfe6dfe97ce" Text="[searchRow(&quot;Nivel job&quot;).ToString]" Version="V2">
+            <p:CvSelectItemWithDescriptor DeselectAfter="{x:Null}" InRegion="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" Descriptor="[&quot;Target: InputBox (1,0,215,19)&quot;]" DesignTimeCacheId="bc17e958-7b54-4ff1-9872-89098d266baf" DesignTimeScaleFactor="2" DisplayName="CV Dropdown Select - Nivel Job" EmptyField="False" sap:VirtualizedContainerService.HintSize="400,165" sap2010:WorkflowViewState.IdRef="CvSelectItemWithDescriptor_4" InformativeScreenshot="c574f8d107b2cef7bccc3bfe6dfe97ce" Text="[searchRow(&quot;Nivel job&quot;).ToString]" Version="V2">
               <p:CvSelectItemWithDescriptor.DesignTimeDescriptor>
                 <uc:CvDescriptor>
                   <uc:CvDescriptor.Target>
@@ -321,14 +324,14 @@
         <InArgument x:TypeArguments="x:Boolean" />
       </p:CVScope.UseLocalServer>
     </p:CVScope>
-    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" Server="{x:Null}" ApiKey="clgOSthD9BzqLEmg4L1CehvvTNw9MvdEYGTdBt7VdwMRNiXhQqSuNUMFoJDYCK6pA0QavqhXS1L5lIg/A2nSOg==" DesignTimeCacheId="bc17e958-7b54-4ff1-9872-89098d266baf" DisplayName="CV Screen Scope 'SELECT  controls[select...'" sap:VirtualizedContainerService.HintSize="434,476" sap2010:WorkflowViewState.IdRef="CVScope_5" Version="V2">
+    <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" Server="{x:Null}" ApiKey="clgOSthD9BzqLEmg4L1CehvvTNw9MvdEYGTdBt7VdwMRNiXhQqSuNUMFoJDYCK6pA0QavqhXS1L5lIg/A2nSOg==" DesignTimeCacheId="bc17e958-7b54-4ff1-9872-89098d266baf" DisplayName="Computer Vision  Screen Scope select 'Oras'" sap:VirtualizedContainerService.HintSize="434,476" sap2010:WorkflowViewState.IdRef="CVScope_5" Version="V2">
       <p:CVScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
           </ActivityAction.Argument>
           <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_8">
-            <p:CvSelectItemWithDescriptor DeselectAfter="{x:Null}" InRegion="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" Descriptor="[&quot;Target: InputBox (1,0,216,19)&quot;]" DesignTimeCacheId="bc17e958-7b54-4ff1-9872-89098d266baf" DesignTimeScaleFactor="2" DisplayName="CV Dropdown Select - InputBox" EmptyField="False" sap:VirtualizedContainerService.HintSize="400,165" sap2010:WorkflowViewState.IdRef="CvSelectItemWithDescriptor_6" InformativeScreenshot="09509b1fe1941aaa06622fd4b6081db9" Text="[searchRow(&quot;Oras&quot;).ToString]" Version="V2">
+            <p:CvSelectItemWithDescriptor DeselectAfter="{x:Null}" InRegion="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" Descriptor="[&quot;Target: InputBox (1,0,216,19)&quot;]" DesignTimeCacheId="bc17e958-7b54-4ff1-9872-89098d266baf" DesignTimeScaleFactor="2" DisplayName="CV Dropdown Select - Oras" EmptyField="False" sap:VirtualizedContainerService.HintSize="400,165" sap2010:WorkflowViewState.IdRef="CvSelectItemWithDescriptor_6" InformativeScreenshot="09509b1fe1941aaa06622fd4b6081db9" Text="[searchRow(&quot;Oras&quot;).ToString]" Version="V2">
               <p:CvSelectItemWithDescriptor.DesignTimeDescriptor>
                 <uc:CvDescriptor>
                   <uc:CvDescriptor.Target>
@@ -396,7 +399,7 @@
         <InArgument x:TypeArguments="x:Boolean" />
       </p:CVScope.UseLocalServer>
     </p:CVScope>
-    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Cauta'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
       <ui:Click.CursorPosition>
         <ui:CursorPosition Position="Center">
           <ui:CursorPosition.OffsetX>
