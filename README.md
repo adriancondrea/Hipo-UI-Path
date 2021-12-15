@@ -12,7 +12,6 @@ Tasks:
 - [ ] apply to each job (save in favourite list)
 - [ ] read CV data from excel (use same activity as first task) and save to variables
 - [ ] create CV
-- [ ] Assemble everything together and hope it works
 
 Take into consideration after finishing implementation tasks:
 - [ ] Exceptions: (excel sheet from 1. contains invalid data; invalid windows credentials; CV data invalid)
