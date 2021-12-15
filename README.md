@@ -10,5 +10,5 @@ Tasks:
 - [x] search for job (using data extracted from excel -> advanced search)
 - [x] extract job data in a separate file
 - [x] apply to each job (save in favourite list)
-- [ ] read CV data from excel (use same activity as first task) and save to variables
-- [ ] create CV
+- [x] read CV data from excel (use same activity as first task) and save to variables
+- [x] create CV
