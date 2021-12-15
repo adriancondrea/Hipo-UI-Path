@@ -10,7 +10,7 @@ Tasks:
 - [x] search for job (using data extracted from excel -> advanced search)
 - [x] extract job data in a separate file
 - [ ] apply to each job (save in favourite list)
-- [ ] read CV data from excel (use same activity as 1.) and save to variables
+- [ ] read CV data from excel (use same activity as first task) and save to variables
 - [ ] create CV
 - [ ] Assemble everything together and hope it works
 
