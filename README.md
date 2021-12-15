@@ -6,9 +6,9 @@ Extra requirement: create CV after login (before applying to jobs). Use whatever
 
 Tasks:
 - [x] Read from excel sheet (title, profile, city, level of the job) and save to variables
-- [ ] log in using windows credentials
-- [ ] search for job (using data extracted from excel -> advanced search)
-- [ ] extract job data in a separate file
+- [x] log in using windows credentials
+- [x] search for job (using data extracted from excel -> advanced search)
+- [x] extract job data in a separate file
 - [ ] apply to each job (save in favourite list)
 - [ ] read CV data from excel (use same activity as 1.) and save to variables
 - [ ] create CV
