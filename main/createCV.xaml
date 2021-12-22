@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="createCV" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="735,3369" sap2010:WorkflowViewState.IdRef="createCV_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="createCV" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="735,3431" sap2010:WorkflowViewState.IdRef="createCV_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
       <x:String>System.Activities</x:String>
@@ -57,7 +57,7 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="createCV" sap:VirtualizedContainerService.HintSize="552,3304" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="createCV" sap:VirtualizedContainerService.HintSize="552,3366" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="https://www.hipo.ro/locuri-de-munca/candidat/myhipo" Name="userPageUrl" />
       <Variable x:TypeArguments="sd:DataRow" Name="cvDataFirstRow" />
@@ -74,13 +74,13 @@
         <OutArgument x:TypeArguments="sd:DataRow" x:Key="resultFirstRow">[cvDataFirstRow]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe'" sap:VirtualizedContainerService.HintSize="510,3059" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="49de42360bf22fa317acd9197767bac4" Selector="&lt;html app='msedge.exe' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe'" sap:VirtualizedContainerService.HintSize="510,3121" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="49de42360bf22fa317acd9197767bac4" Selector="&lt;html app='msedge.exe' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,2913" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,2975" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="cvName" />
             </Sequence.Variables>
@@ -151,7 +151,7 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="2000" DisplayName="Click 'te intorci la CV'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click AlterIfDisabled="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="3000" DisplayName="Click 'te intorci la CV'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -163,11 +163,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="29117442-616d-477b-be6f-78c09bf7aa36" InformativeScreenshot="c3cb70c9ad4c99e2b163c617787de597" Selector="&lt;webctrl aaname='te intorci la CV' tag='SPAN' /&gt;" WaitForReady="COMPLETE">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                </ui:Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="29117442-616d-477b-be6f-78c09bf7aa36" InformativeScreenshot="c3cb70c9ad4c99e2b163c617787de597" Selector="&lt;webctrl aaname='te intorci la CV' tag='SPAN' /&gt;" TimeoutMS="5000" WaitForReady="COMPLETE" />
               </ui:Click.Target>
             </ui:Click>
             <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Edit " sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
@@ -192,19 +188,15 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe Editeaza'" sap:VirtualizedContainerService.HintSize="434,1682" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="068135ffb7d84b35334a0c3530a4b6c4" Selector="&lt;html app='msedge.exe' title='Editeaza date personale' /&gt;">
+            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe Editeaza'" sap:VirtualizedContainerService.HintSize="434,1744" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="068135ffb7d84b35334a0c3530a4b6c4" Selector="&lt;html app='msedge.exe' title='Editeaza date personale' /&gt;">
               <ui:BrowserScope.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,1536" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,1598" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <Sequence.Variables>
-                      <Variable x:TypeArguments="x:String" Name="cvPageUrl">
-                        <Variable.Default>
-                          <Literal x:TypeArguments="x:String">https://www.hipo.ro/locuri-de-munca/candidat/myhipo/cvuri</Literal>
-                        </Variable.Default>
-                      </Variable>
+                      <Variable x:TypeArguments="x:String" Default="https://www.hipo.ro/locuri-de-munca/candidat/myhipo/cvuri" Name="cvPageUrl" />
                     </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -341,6 +333,7 @@
                         </ui:Target>
                       </ui:Click.Target>
                     </ui:Click>
+                    <ui:CloseTab Browser="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
                   </Sequence>
                 </ActivityAction>
               </ui:BrowserScope.Body>
