@@ -5,10 +5,11 @@ Create an excel sheet with data about the title, profile, city, level of the job
 Extra requirement: create CV after login (before applying to jobs). Use whatever data you like, from an excel file. Not all fields must be present.
 
 Tasks:
-- [x] Read from excel sheet (title, profile, city, level of the job) and save to variables
+- [x] read from excel sheet job details(title, profile, city, level of the job) and save to variables
 - [x] log in using windows credentials
+- [x] read CV data from excel (use same activity as first task) and save to variables
+- [x] create CV
 - [x] search for job (using data extracted from excel -> advanced search)
 - [x] extract job data in a separate file
 - [x] apply to each job (save in favourite list)
-- [x] read CV data from excel (use same activity as first task) and save to variables
-- [x] create CV
+- [x] logout
